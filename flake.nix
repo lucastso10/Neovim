@@ -14,7 +14,7 @@
 
     nvim = nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule {
       inherit pkgs;
-      module = ./test.nix;
+      module = ./default.nix;
     };
   in
   {
