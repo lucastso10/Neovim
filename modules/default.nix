@@ -12,5 +12,6 @@
     ./toggleterminal
     ./treesiter
     ./undotree
+    ./typescript-tools
   ];
 }
