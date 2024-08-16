@@ -1,9 +1,9 @@
-{...}:
+{ ... }:
 {
   config = {
     plugins = {
-        neoscroll.enable = true;
-      };
+      neoscroll.enable = true;
+    };
 
   };
 }

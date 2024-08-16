@@ -1,8 +1,8 @@
-{...}:
+{ ... }:
 {
   config = {
     plugins = {
-            treesitter.enable = true;
-          };
-          };
-        }
+      treesitter.enable = true;
+    };
+  };
+}

@@ -1,8 +1,8 @@
-{...}:
+{ ... }:
 {
   config = {
     plugins = {
-            typescript-tools.enable = true;
-          };
-          };
-        }
+      typescript-tools.enable = true;
+    };
+  };
+}

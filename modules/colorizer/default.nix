@@ -1,8 +1,8 @@
-{...}:
+{ ... }:
 {
   config = {
     plugins = {
-        nvim-colorizer.enable = true;
-      };
+      nvim-colorizer.enable = true;
+    };
   };
 }
