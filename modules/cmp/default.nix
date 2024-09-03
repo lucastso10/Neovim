@@ -2,7 +2,6 @@
 {
   config = {
     plugins = {
-      cmp-nvim-ultisnips.enable = true;
       cmp-nvim-lsp.enable = true;
 
       cmp = {
@@ -15,7 +14,6 @@
             "<C-j>" = "cmp.mapping.select_next_item()";
           };
           sources = [
-            { name = "ultisnips"; }
             { name = "nvim_lsp"; }
             { name = "path"; }
           ];
