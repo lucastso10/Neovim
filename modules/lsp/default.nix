@@ -15,6 +15,7 @@
             installRustc = false;
           };
           html.enable = true;
+          omnisharp.enable = true; # C#
         };
       };
     };
