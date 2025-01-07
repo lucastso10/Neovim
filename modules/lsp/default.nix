@@ -9,7 +9,7 @@
           cmake.enable = true; # cmake
           nixd.enable = true; # nix
           pylsp.enable = true; # python
-          rust-analyzer = {
+          rust_analyzer = {
             enable = true; # Rust
             installCargo = false;
             installRustc = false;

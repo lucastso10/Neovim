@@ -2,7 +2,7 @@
 {
   config = {
     plugins = {
-      colorizer.enable = true;
+      web-devicons.enable = true;
     };
   };
 }
