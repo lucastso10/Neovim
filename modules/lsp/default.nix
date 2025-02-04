@@ -14,8 +14,10 @@
             installCargo = false;
             installRustc = false;
           };
-          html.enable = true;
+          superhtml.enable = true;
           omnisharp.enable = true; # C#
+
+          ts_ls.enable = true; # typescript
           svelte.enable = true; # svelte/sveltekit
         };
       };
