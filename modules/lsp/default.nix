@@ -16,6 +16,7 @@
           };
           html.enable = true;
           omnisharp.enable = true; # C#
+          svelte.enable = true; # svelte/sveltekit
         };
       };
     };
