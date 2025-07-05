@@ -13,13 +13,14 @@
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-      nvim = nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule {
+      mkNeovim = { module ? { } }: 
+      nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule {
         inherit pkgs;
-        module = ./default.nix;
+        module = pkgs.lib.mkMerge [ ./default.nix module ];
       };
     in
     {
-      packages.x86_64-linux.default = nvim;
+      packages.x86_64-linux.mkNeovim = mkNeovim;
 
       formatter.x86_64-linux = pkgs.nixfmt-rfc-style;
     };
