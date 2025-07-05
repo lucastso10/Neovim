@@ -1,6 +1,6 @@
-{ ... }:
+{ config, ... }:
 {
-  imports = [ ./modules ];
+  imports = [ ./modules ./colors.nix ];
 
   config = {
     viAlias = true;
@@ -20,42 +20,23 @@
       enable = true;
 
       colorscheme = {
-        base00 = "#161616";
-        base01 = "#262626";
-        base02 = "#393939";
-        base03 = "#525252";
-        base04 = "#dde1e6";
-        base05 = "#f2f4f8";
-        base06 = "#ffffff";
-        base07 = "#08bdba";
-        base08 = "#3ddbd9";
-        base09 = "#78a9ff";
-        base0A = "#42be65";
-        base0B = "#33b1ff";
-        base0C = "#ff7eb6";
-        base0D = "#ee5396";
-        base0E = "#be95ff";
-        base0F = "#82cfff";
+        base00 = config.colors.base00;
+        base01 = config.colors.base01;
+        base02 = config.colors.base02;
+        base03 = config.colors.base03;
+        base04 = config.colors.base04;
+        base05 = config.colors.base05;
+        base06 = config.colors.base06;
+        base07 = config.colors.base07;
+        base08 = config.colors.base08;
+        base09 = config.colors.base09;
+        base0A = config.colors.base0A;
+        base0B = config.colors.base0B;
+        base0C = config.colors.base0C;
+        base0D = config.colors.base0D;
+        base0E = config.colors.base0E;
+        base0F = config.colors.base0F;
       };
-      
-      #colorscheme = {
-      #  base00 = "#1d2021"; # ----
-      #  base01 = "#383c3e"; # ---
-      #  base02 = "#53585b"; # --
-      #  base03 = "#6f7579"; # -
-      #  base04 = "#cdcdcd"; # +
-      #  base05 = "#d5d5d5"; # ++
-      #  base06 = "#dddddd"; # +++
-      #  base07 = "#e5e5e5"; # ++++
-      #  base08 = "#d72638"; # red
-      #  base09 = "#eb8413"; # orange
-      #  base0A = "#f19d1a"; # yellow
-      #  base0B = "#88b92d"; # green
-      #  base0C = "#1ba595"; # aqua/cyan
-      #  base0D = "#1e8bac"; # blue
-      #  base0E = "#be4264"; # purple
-      #  base0F = "#c85e0d";
-      #};
     };
   };
 }
