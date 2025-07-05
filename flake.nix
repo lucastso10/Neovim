@@ -16,7 +16,7 @@
       mkNeovim = { module ? { } }: 
       nixvim.legacyPackages.x86_64-linux.makeNixvimWithModule {
         inherit pkgs;
-        module = pkgs.lib.mkMerge [ ./default.nix module ];
+        module = [ ./default.nix module ];
       };
     in
     {
