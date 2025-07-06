@@ -3,6 +3,7 @@
   config = {
     plugins = {
       cmp-nvim-lsp.enable = true;
+      cmp-treesitter.enable = true;
 
       cmp = {
         enable = true;
@@ -15,7 +16,9 @@
           };
           sources = [
             { name = "nvim_lsp"; }
+            { name = "treesitter"; }
             { name = "path"; }
+            { name = "buffer"; }
           ];
         };
       };
