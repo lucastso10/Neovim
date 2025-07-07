@@ -4,6 +4,5 @@
     plugins = {
       neoscroll.enable = true;
     };
-
   };
 }

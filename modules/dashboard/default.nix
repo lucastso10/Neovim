@@ -32,7 +32,7 @@
             };
             project = {
               enable = true;
-              action = "NeoTree dir=";
+              action = "e ";
             };
             packages.enable = false;
           };

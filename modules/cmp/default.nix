@@ -16,7 +16,7 @@
           };
           sources = [
             { name = "nvim_lsp"; }
-            { name = "treesitter"; }
+            #{ name = "treesitter"; }
             { name = "path"; }
             { name = "buffer"; }
           ];

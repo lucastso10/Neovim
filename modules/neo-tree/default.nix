@@ -7,20 +7,7 @@
         enableGitStatus = true;
         enableModifiedMarkers = true;
 
-        window.mappings = {
-          "<space>" = {
-            command = "toggle_node";
-            # disable `nowait` if you have existing combos starting with this char that you want to use
-            nowait = false;
-          };
-        };
-
         extraOptions = {
-          filesystem = {
-            hide_dotfiles = true;
-            hide_gitignored = true;
-            always_show = [ ".gitignored" ];
-          };
           git_status = {
             symbols = {
               untracked = "";
@@ -32,7 +19,20 @@
           };
         };
 
+        window.position = "float";
       };
     };
+    keymaps = [
+      {
+        mode = "n";
+        key = "<leader>tt";
+        action = "<cmd>:Neotree reveal<cr>";
+      }
+      {
+        mode = "n";
+        key = "<leader>tq";
+        action = "<cmd>:Neotree close<cr>";
+      }
+    ];
   };
 }

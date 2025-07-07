@@ -12,7 +12,6 @@
     ./toggleterminal
     ./treesiter
     ./undotree
-    ./typescript-tools
     ./web-devicons
   ];
 }

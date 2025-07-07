@@ -1,6 +1,9 @@
 { config, ... }:
 {
-  imports = [ ./modules ./colors.nix ];
+  imports = [
+    ./modules
+    ./colors.nix
+  ];
 
   config = {
     viAlias = true;
